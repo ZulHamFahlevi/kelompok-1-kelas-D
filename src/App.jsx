@@ -1,4 +1,4 @@
-import HomePage from "./pages/homePage/homePage";
+import HomePage from "./pages/homePage/HomePage";
 import HybridClasses from "./pages/hybridClasses/hybridClasses";
 import KampusMerdeka from "./pages/kampusMerdeka/KampusMerdeka";
 import MyAccount from "./pages/myAccount/MyAccount";
