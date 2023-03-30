@@ -7,11 +7,11 @@ import MyAccount from "./pages/myAccount/MyAccount";
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
+      <HomePage />
       <HybridClasses />
-      {/* <RecordedLearning />
+      <RecordedLearning />
       <KampusMerdeka />
-      <MyAccount /> */}
+      <MyAccount />
     </>
   );
 }
