@@ -1,0 +1,28 @@
+.container-col {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-card {
+    width: 280px;
+    border: 1px solid rgba(244, 117, 34, 1);
+}
+
+.container-card-2 {
+    width: 280px;
+}
+
+.item-kelas {
+    color: #aaa;
+}
+
+.garis {
+    margin-top: 10px;
+}
+
+.container-price {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
