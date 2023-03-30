@@ -22,6 +22,7 @@ const MenuComponent = () => {
                 hoverable
                 cover={<Image preview={false} src={item.image} />}
               >
+                <div className="featured">Featured</div>
                 <div>
                   <span>
                     <p className="item-kelas">{item.kelas}</p>
