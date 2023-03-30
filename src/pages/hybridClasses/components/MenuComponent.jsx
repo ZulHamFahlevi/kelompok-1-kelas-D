@@ -6,7 +6,7 @@ import "./MenuComponent.css";
 const MenuComponent = () => {
   return (
     <>
-      <Row>
+      <Row className="container-row">
         {DATA_FUNDAMENTAL.map((item, index) => {
           return (
             <Col
