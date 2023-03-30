@@ -1,8 +1,8 @@
-import HomePage from "./pages/homePage/homePage";
-import HybridClasses from "./pages/hybridClasses/hybridClasses";
+import HomePage from "./pages/homePage/HomePage";
+import HybridClasses from "./pages/hybridClasses/HybridClasses";
+import RecordedLearning from "./pages/recordedLearning/RecordedLearning";
 import KampusMerdeka from "./pages/kampusMerdeka/KampusMerdeka";
 import MyAccount from "./pages/myAccount/MyAccount";
-import RecordedLearning from "./pages/recordedLearning/RecordedLearning";
 
 function App() {
   return (
