@@ -1,17 +1,17 @@
-// import HomePage from "./pages/homePage/homePage";
-// import HybridClasses from "./pages/hybridClasses/hybridClasses";
-// import KampusMerdeka from "./pages/kampusMerdeka/KampusMerdeka";
-// import MyAccount from "./pages/myAccount/MyAccount";
+import HomePage from "./pages/homePage/HomePage";
+import HybridClasses from "./pages/hybridClasses/HybridClasses";
 import RecordedLearning from "./pages/recordedLearning/RecordedLearning";
+import KampusMerdeka from "./pages/kampusMerdeka/KampusMerdeka";
+import MyAccount from "./pages/myAccount/MyAccount";
 
 function App() {
   return (
     <>
-      {/* <HomePage />
-      <HybridClasses /> */}
+      <HomePage />
+      <HybridClasses />
       <RecordedLearning />
-      {/* <KampusMerdeka />
-      <MyAccount /> */}
+      <KampusMerdeka />
+      <MyAccount />
     </>
   );
 }
