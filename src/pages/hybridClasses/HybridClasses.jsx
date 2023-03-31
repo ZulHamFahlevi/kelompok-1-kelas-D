@@ -1,7 +1,13 @@
-import React from "react";
+import HeaderComponent from "./components/HeaderComponent";
+import MenuComponent from "./components/MenuComponent";
 
 const HybridClasses = () => {
-  return <div>HybridClasses</div>;
+  return (
+    <>
+      <HeaderComponent />
+      <MenuComponent />
+    </>
+  );
 };
 
 export default HybridClasses;
