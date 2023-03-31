@@ -14,7 +14,7 @@ const RecordedLearning = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-record">
       <h2 style={{ ...styles, marginTop: '40px' }}>Recorded Learning</h2>
       <p style={{ fontFamily: "'Catamaran', sans-serif", marginTop: "2rem" }}>
         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru

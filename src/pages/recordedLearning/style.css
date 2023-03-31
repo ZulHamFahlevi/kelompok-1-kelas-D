@@ -1,20 +1,8 @@
-/* body{
- background-color: aquamarine;   
-} */
-/* .record{
-    font-size: 30px;
-} */
-/* .pbaru{
-    font-size: 18px;
-    line-height: 100px;
-} */
-.container {
+.container-record {
     margin: 0 auto;
     max-width: 1200px;
-  }
-/* title{
-    color: aqua;
-} */
+}
+
 .btn-primary {
     background-color: rgb(28, 28, 92);
     color: white;
@@ -26,4 +14,4 @@
     height: 60px;
     display: block;
     margin: 0 auto;
-  }
+}

@@ -1,3 +1,6 @@
+import GridIcon from "./grid.png";
+import ListIcon from "./list.png";
+import SearchIcon from "./search.png";
 import logoOne from "./logo-one.png";
 import discord from "./discord.svg";
 import whatsapp from "./square-whatsapp.svg";
@@ -15,6 +18,9 @@ import fileVideo from "./file-video.svg";
 import businessTime from "./business-time.svg";
 import userTie from "./user-tie.svg";
 export {
+  GridIcon,
+  ListIcon,
+  SearchIcon,
   logoOne,
   discord,
   whatsapp,
