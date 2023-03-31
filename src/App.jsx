@@ -7,10 +7,6 @@ import RecordedLearning from "./pages/recordedLearning/RecordedLearning";
 function App() {
   return (
     <>
-      <HomePage />
-      <HybridClasses />
-      <RecordedLearning />
-      <KampusMerdeka />
       <MyAccount />
     </>
   );
