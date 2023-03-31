@@ -1,0 +1,33 @@
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 84px;
+  padding: 0px 0.5em;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.searchCircle {
+  width: 36px;
+  height: 36px;
+  background-color: #19345f;
+  border-radius: 50%;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.searchCircle:hover {
+  background-color: #f37524;
+}
+.searchLogo {
+  color: #fff;
+  font-size: 14px;
+}
