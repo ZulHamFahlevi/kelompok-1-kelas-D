@@ -1,0 +1,49 @@
+.container-row {
+    margin: 0 20px;
+}
+
+.container-col {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-card {
+    width: 300px;
+    border: 1px solid rgba(244, 117, 34, 1);
+    overflow: hidden;
+}
+
+.container-card-2 {
+    width: 300px;
+}
+
+.featured {
+    width: 200px;
+    background-color: rgba(244, 117, 34, 1);
+    color: #fff;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 99;
+    text-align: center;
+    position: absolute;
+    top: -75px;
+    left: 15px;
+    transform: rotate(-45deg) translateY(20px) translateX(-120px);
+}
+
+.item-kelas {
+    color: #aaa;
+}
+
+.garis {
+    margin-top: 10px;
+}
+
+.container-price {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
