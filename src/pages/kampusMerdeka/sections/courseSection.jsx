@@ -5,7 +5,7 @@ export default function CourseSection() {
   return (
     <div className="secondSection-container">
       <Content className="secondSection">
-        <h2>{secondData.title}</h2>
+        <h2 className="title-second-data">{secondData.title}</h2>
         <Row className="cards" gutter={[16]}>
           {secondData.items.map((item, idx) => (
             <Col span={8} key={idx}>

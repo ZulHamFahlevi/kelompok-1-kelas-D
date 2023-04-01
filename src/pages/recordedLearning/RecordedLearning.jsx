@@ -15,7 +15,7 @@ const RecordedLearning = () => {
 
   return (
     <div className="container-record">
-      <h2 style={{ ...styles, marginTop: '40px' }}>Recorded Learning</h2>
+      <h2 style={{ ...styles, marginTop: "40px" }}>Recorded Learning</h2>
       <p style={{ fontFamily: "'Catamaran', sans-serif", marginTop: "2rem" }}>
         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru
         dan relevan dengan industri IT.
@@ -35,7 +35,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Strategi berkarir di Starup Bermodal Ijazah SMK</h4>
+            <h4 className="title-record">
+              Strategi berkarir di Starup Bermodal Ijazah SMK
+            </h4>
             <br></br>
             <hr></hr>
             <br />
@@ -59,7 +61,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Tips and Tricks to Pass Hackerrank Test</h4>
+            <h4 className="title-record">
+              Tips and Tricks to Pass Hackerrank Test
+            </h4>
             <br></br>
             <hr></hr>
             <br />
@@ -83,7 +87,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Tips and Tricks Pembuatan CV Lulus Panggilan Kerja</h4>
+            <h4 className="title-record">
+              Tips and Tricks Pembuatan CV Lulus Panggilan Kerja
+            </h4>
             <br></br>
             <hr></hr>
             <br />
@@ -107,7 +113,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Graphic Design for Beginner Workshop</h4>
+            <h4 className="title-record">
+              Graphic Design for Beginner Workshop
+            </h4>
             <br></br>
             <hr></hr>
             <br />
@@ -132,7 +140,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Company Profile Website with WordPress Workshop</h4>
+            <h4 className="title-record">
+              Company Profile Website with WordPress Workshop
+            </h4>
             <br></br>
             <br></br>
             <hr></hr>
@@ -157,7 +167,7 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>
+            <h4 className="title-record">
               Webinar Tips and Tricks : How to Become a Software Engineer in a
               Unicorn
             </h4>
@@ -184,7 +194,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Get to know what and how to become a UI/UX designer</h4>
+            <h4 className="title-record">
+              Get to know what and how to become a UI/UX designer
+            </h4>
             <br></br>
             <br></br>
             <hr></hr>
@@ -209,7 +221,7 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>
+            <h4 className="title-record">
               Flutter Tutorial for Beginners – Build iOS and Android Apps with
               Google’s Flutter
             </h4>
@@ -236,7 +248,7 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Introduction to Scrum Framework</h4>
+            <h4 className="title-record">Introduction to Scrum Framework</h4>
             <br></br>
             <hr></hr>
             <br />
@@ -260,7 +272,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Story Telling with Data Using Python</h4>
+            <h4 className="title-record">
+              Story Telling with Data Using Python
+            </h4>
             <hr></hr>
             <br />
             <p style={{ textAlign: "right", textDecoration: "line-through" }}>
@@ -283,7 +297,9 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Create Your First Chatbot Using Python</h4>
+            <h4 className="title-record">
+              Create Your First Chatbot Using Python
+            </h4>
             <hr></hr>
             <br />
             <p style={{ textAlign: "right", textDecoration: "line-through" }}>
@@ -306,7 +322,7 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Build Your First Android App</h4>
+            <h4 className="title-record">Build Your First Android App</h4>
             <br></br>
             <hr></hr>
             <br />
@@ -330,7 +346,7 @@ const RecordedLearning = () => {
             }
           >
             <p>Recorded Learning</p>
-            <h4>Smarter Prototyping with Figma</h4>
+            <h4 className="title-record">Smarter Prototyping with Figma</h4>
             <br></br>
             <hr></hr>
             <br />

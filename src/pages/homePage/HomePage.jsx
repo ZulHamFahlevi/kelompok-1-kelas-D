@@ -1,17 +1,14 @@
-import "./HomePage.css";
-import bookstack from "../../assets/icons/book_stack.png";
 import book from "../../assets/icons/book.png";
+import bookstack from "../../assets/icons/book_stack.png";
 import building from "../../assets/icons/building.png";
+import flutter from "../../assets/icons/flutter.png";
 import graduate from "../../assets/icons/graduate.png";
 import project from "../../assets/icons/project.png";
-import user from "../../assets/icons/user.png";
-import flutter from "../../assets/icons/flutter.png";
-import spring from "../../assets/icons/spring.png";
 import react from "../../assets/icons/react.png";
 import arrow from "../../assets/icons/right-arrow.png";
-import whatsapp from "../../assets/icons/whatsapp.png";
-import telegram from "../../assets/icons/telegram.png";
-import discord from "../../assets/icons/discord.png";
+import spring from "../../assets/icons/spring.png";
+import user from "../../assets/icons/user.png";
+import "./HomePage.css";
 const HomePage = () => {
   return (
     <>
@@ -19,7 +16,7 @@ const HomePage = () => {
       <div className="hero">
         <div className="hero_title_pad">
           <h1 className="text_white font_roboto ">
-            Sudah Siap Kerja <br /> Jadi <i>Programmer</i> ?
+            Sudah Siap Kerja <br /> Jadi <span className="text_black">Programmer</span> ?
           </h1>
           <p className="text_white font_mulish ">
             Belajar kapan pun, di mana pun, dari gadget apa pun, dengan Alterra
