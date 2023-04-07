@@ -6,6 +6,13 @@
 .title-record {
     color: black;
 }
+.container-harga{
+    text-align: "right"; 
+    /* textDecoration: "line-through"; */
+}
+.item-price{
+    text-decoration: "line-through";
+}
 
 .btn-primary {
     background-color: rgb(28, 28, 92);

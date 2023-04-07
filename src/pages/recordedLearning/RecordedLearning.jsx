@@ -1,17 +1,20 @@
 import React from "react";
 import "./style.css";
-import { Card, Col, Row } from "antd";
+import { Card, Col, Row, Tooltip } from "antd";
+import { DATA_RECORDED, DATA_TOOLTIP } from "./constants";
+// import ReactTooltip from "react-tooltip";
 
 const RecordedLearning = () => {
-  // const { Meta } = Card;
-
   const styles = {
     fontFamily: '"Catamaran", Sans-serif',
-    // fontStyle: 'italic',
     fontWeight: "bold",
     fontSize: "2em",
     color: "rgb(28, 28, 92)",
   };
+  // React.useEffect(() => {
+  //   document.documentElement.scrollTop = document.documentElement.clientHeight;
+  //   document.documentElement.scrollLeft = document.documentElement.clientWidth;
+  // }, []);
 
   return (
     <div className="container-record">
@@ -20,345 +23,67 @@ const RecordedLearning = () => {
         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru
         dan relevan dengan industri IT.
       </p>
-      <Row gutter={18} style={{ flexWrap: "wrap" }}>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 30,
-            }}
-            cover={
-              <img
-                alt="example"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/SMK-Bisa-pwodivvfv3d1xkqt5bzbsw5j3ywfxwwf2w78125zre.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Strategi berkarir di Starup Bermodal Ijazah SMK
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 30,
-            }}
-            cover={
-              <img
-                alt="card2"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/2Hackerrank-pwfj6gjgpywiy7nhzi0v0w3nutvqqzsy31wesmnjuy.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Tips and Tricks to Pass Hackerrank Test
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 30,
-            }}
-            cover={
-              <img
-                alt="card3"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/aCV-pwfim90ds78lc109zrjmezow2lhn99kpb0ylcgm9my.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Tips and Tricks Pembuatan CV Lulus Panggilan Kerja
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 30,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/aGraphic-pwfisp6ioa2ezpn1c1wh0v3qsrpb2i6eiy3ivt20y2.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Graphic Design for Beginner Workshop
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <br></br>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Wordpress-pwfj02907k59xqy0c8h9k07qbfetd5epje2g7u507e.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Company Profile Website with WordPress Workshop
-            </h4>
-            <br></br>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/aaUnicorn-pwfjfzmk0hy6nvt5c4bosziwogwpsimz280mymiuru.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Webinar Tips and Tricks : How to Become a Software Engineer in a
-              Unicorn
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/UU-pwfkzokay46sk4wv4oyx1fl3rcemuwqfpvjblty43u.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Get to know what and how to become a UI/UX designer
-            </h4>
-            <br></br>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Flutterrc-pwflz6wt4ssr5tbzs1jj8gzznddtn9pdxmroa5ap1m.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Flutter Tutorial for Beginners – Build iOS and Android Apps with
-              Google’s Flutter
-            </h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Scruma-pwfm7gvnba4ne7b6g4c9ovt3yil6fbkaqlklev0w96.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">Introduction to Scrum Framework</h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Phythons-pwfmctkk8bgfi9ja6xmse16lqi7f99t9t3b4sl36tm.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Story Telling with Data Using Python
-            </h4>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Bots-pwfmhf05n5qw9muzcx54kvfqabk0w0213u4l9a9wei.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">
-              Create Your First Chatbot Using Python
-            </h4>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/Andro-pwfmlxm8hhxi26arzdfl28eh1zaivmzle6zla5ksi2.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">Build Your First Android App</h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
-        <Col span={6}>
-          <Card
-            style={{
-              width: 280,
-              marginTop: 60,
-            }}
-            cover={
-              <img
-                alt="card4"
-                src="https://alta.id/wp-content/uploads/elementor/thumbs/uuua-pwfmq5w38npyb05la795a5z5aefzils3z4o90zb0i2.png"
-              />
-            }
-          >
-            <p>Recorded Learning</p>
-            <h4 className="title-record">Smarter Prototyping with Figma</h4>
-            <br></br>
-            <hr></hr>
-            <br />
-            <p style={{ textAlign: "right", textDecoration: "line-through" }}>
-              Rp.119.000
-            </p>
-            <h3 style={{ textAlign: "right" }}>Rp.69.000</h3>
-          </Card>
-        </Col>
+      <Row gutter={20} style={{ flexWrap: "wrap" }}>
+        {DATA_RECORDED.map((item, index) => {
+          return (
+            <Col span={6}>
+              <Tooltip title="Alterra Academy">
+              {/* <Tooltip title="Thanks for using antd. Have a nice day!" open> */}
+              <Card
+                key={index}
+                style={{
+                  width: 290,
+                  marginTop: 30,
+                }}
+              >
+                <img
+                  src={item.image}
+                  alt="img"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    objectFit: 'cover'
+                  }}
+                  // data-for="tool"
+                  // data-tip="Hello world"
+                  // id={`img${index}`}
+                  // data-tip="Welcome!"
+                  // data-for={`img${index}`}
+                />
+                {/* <ReactTooltip id="tool" /> */}
+                <div>
+                  <span>
+                    <p className="kelas">{item.kelas}</p>
+                    <h3>{item.name}</h3>
+                  </span>
+                  <hr />
+                  <span className="container-harga">
+                    <p
+                      style={{
+                        textAlign: "right",
+                        textDecoration: "line-through",
+                      }}
+                    >
+                      {item.price}
+                    </p>
+                    <h3 style={{ textAlign: "right" }}>{item.harga}</h3>
+                  </span>
+                </div>
+              </Card>
+              </Tooltip>
+              {/* </Tooltip> */}
+              {/* <ReactTooltip id={`img${index}`} place="top" effect="solid" /> */}
+            </Col>
+          );
+        })}
+        {/* {DATA_TOOLTIP.map((item, index) =>{
+          return(
+            
+          );
+        })} */}
       </Row>
 
-      <button type="button" class="btn-primary" value="LOADMORE">
+      <button type="button" className="btn-primary" value="LOADMORE">
         LOAD MORE
       </button>
     </div>
@@ -366,3 +91,85 @@ const RecordedLearning = () => {
 };
 
 export default RecordedLearning;
+
+// import React from "react";
+// import "./style.css";
+// import { Card, Col, Row } from "antd";
+// import { DATA_RECORDED } from "./constants";
+// import ReactTooltip from "react-tooltip";
+
+// const RecordedLearning = () => {
+//   // const { Meta } = Card;
+
+//   const styles = {
+//     fontFamily: '"Catamaran", Sans-serif',
+//     // fontStyle: 'italic',
+//     fontWeight: "bold",
+//     fontSize: "2em",
+//     color: "rgb(28, 28, 92)",
+//   };
+
+//   return (
+//     <div className="container-record">
+//       <h2 style={{ ...styles, marginTop: "40px" }}>Recorded Learning</h2>
+//       <p style={{ fontFamily: "'Catamaran', sans-serif", marginTop: "2rem" }}>
+//         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru
+//         dan relevan dengan industri IT.
+//       </p>
+//       <Row gutter={20} style={{ flexWrap: "wrap" }}>
+//         {DATA_RECORDED.map((item, index) => {
+//           return (
+//             <Col span={6}>
+//               <Card
+//                 key={index}
+//                 style={{
+//                   width: 280,
+//                   marginTop: 30,
+//                 }}
+//                 cover={
+//                   <>
+//                     <img
+//                       src={item.image}
+//                       alt=""
+//                       id={`img-${index}`}
+//                       // data-tip={item.tooltip}
+//                       data-tip="Welcome!"
+//                       data-for={`img${index}`}
+//                     />
+//                     {/* <ReactTooltip id={`img-${index}`} effect="solid" /> */}
+//                   </>
+//                 }
+//               >
+//                 <div>
+//                   <span>
+//                     <p className="kelas">{item.kelas}</p>
+//                     <h3>{item.name}</h3>
+//                   </span>
+//                   <hr />
+//                   <span className="container-harga">
+//                     <p
+//                       style={{
+//                         textAlign: "right",
+//                         textDecoration: "line-through",
+//                       }}
+//                     >
+//                       {item.price}
+//                     </p>
+//                     <h3 style={{ textAlign: "right" }}>{item.harga}</h3>
+//                   </span>
+//                 </div>
+//               </Card>
+//               <ReactTooltip id={`img${index}`} place="top" effect="solid" />
+//             </Col>
+//           );
+//         })}
+//       </Row>
+
+//       <button type="button" class="btn-primary" value="LOADMORE">
+//         LOAD MORE
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default RecordedLearning;
