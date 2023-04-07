@@ -1,4 +1,11 @@
-import BookSVG from "../../assets/svg/book-solid.svg";
+import Notifications from "./Notifications/Notifications";
+
+export const CARD_DATA = {
+  img: "https://alta.id/wp-content/uploads/elementor/thumbs/React-KM-pklhkyh4e4dv6bf5mm0u3ekdzi7m2loboygwvk5l56.png",
+  class: "How to be an Ideal Top Search React JS Front-End Engineer",
+  startDate: "February 15, 2023",
+  percentComplete: 30,
+};
 
 export const DROPDOWN_ITEMS = [
   {
@@ -17,15 +24,34 @@ export const DROPDOWN_ITEMS = [
 
 export const TAB_ITEMS = [
   {
-    label: "Home",
-    key: "1",
+    label: "HOME",
+    key: "home",
+    id: "tab-item-all",
+    children: "",
   },
   {
-    label: "Notifications 0",
-    key: "2",
+    label: `NOTIFICATIONS 0`,
+    key: "notifications",
+    id: "tab-item-all",
+    children: <Notifications />,
   },
   {
-    label: "Settings",
-    key: "3",
+    label: "SETTINGS",
+    key: "settings",
+    id: "tab-item-all",
+    children: "",
+  },
+];
+
+export const TAB_ITEM_NOTIFICATIONS = [
+  {
+    label: "Unread",
+    key: "unread",
+    children: "Unread",
+  },
+  {
+    label: "Read",
+    key: "read",
+    children: "read",
   },
 ];
