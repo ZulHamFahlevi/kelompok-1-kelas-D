@@ -1,12 +1,13 @@
-import { Menu, Row } from "antd";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Row } from "antd";
+import { useEffect, useState } from "react";
 import { logoOne } from "../../../assets";
 import DropdownComponent from "../../component/dropdown/dropdown";
 import { menuList } from "./constants";
-import Link from "../../../router/Link";
 import "./header.css";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 export default function HeaderComponent() {
   const [location, setLocation] = useState("/");
 
@@ -15,7 +16,7 @@ export default function HeaderComponent() {
   }, []);
   return (
     <div className="header">
-      <Link href="/">
+      <Link to="/">
         <img src={logoOne} alt="Logo One" className="logo" />
       </Link>
       <div className="searchCircle">
