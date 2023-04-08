@@ -11,14 +11,20 @@ import {
   Progress,
   Button,
   Menu,
+  Tabs,
 } from "antd";
-import { DROPDOWN_ITEMS, TAB_ITEMS } from "./constants";
+import { CARD_DATA, DROPDOWN_ITEMS, TAB_ITEMS } from "./constants";
+// import Notifications from "./Notifications/Notifications";
 
 const MyAccount = () => {
   const { Title } = Typography;
   const { Meta } = Card;
   // const { TabPane } = Tabs;
 
+  const [jmlNotif, setJmlNotif] = useState(0);
+  // const [cardData, setCardData] = useState(CARD_DATA);
+
+  console.log(CARD_DATA);
   const [current, setCurrent] = useState("1");
 
   const onClick = (e) => {
@@ -82,13 +88,11 @@ const MyAccount = () => {
                 >
                   Kampus Merdeka
                 </a>
-                <h5 className="title-card">
-                  How to be an Ideal Top Search React JS Front-End Engineer
-                </h5>
+                <h5 className="title-card">{CARD_DATA.class}</h5>
                 <div>
-                  <p>30% Complete</p>
+                  <p>{`${CARD_DATA.percentComplete}%`} Complete</p>
                   <Progress
-                    percent={30}
+                    percent={CARD_DATA.percentComplete}
                     showInfo={false}
                     strokeColor="#f47522"
                   />
@@ -101,18 +105,18 @@ const MyAccount = () => {
                   CONTINUE
                 </Button>
 
-                <Meta description="Started February 15, 2023" />
+                <Meta description={`Started ${CARD_DATA.startDate}`} />
               </Card>
             </Row>
           </div>
 
           <div className="tabs-one">
             <Row className="myAccount-container">
-              <Menu
-                onClick={onClick}
-                defaultSelectedKeys={["1"]}
-                selectedKeys={[current]}
-                mode="horizontal"
+              {/* Tabs Component */}
+              <Tabs
+                id="tabs-one"
+                defaultActiveKey="home"
+                centered
                 items={TAB_ITEMS}
               />
             </Row>
