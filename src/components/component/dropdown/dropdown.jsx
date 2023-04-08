@@ -1,7 +1,9 @@
 import "./dropdown.css";
 import React from "react";
+import { useLocation } from "react-router";
 
 export default function DropdownComponent(props) {
+  const location = useLocation();
   const onClick = (event, link) => {
     // if ctrl or meta key are held on click, allow default behavior of opening link in new tab
     if (event.metaKey || event.ctrlKey) {
@@ -23,9 +25,13 @@ export default function DropdownComponent(props) {
       <a
         className="dropdown-container"
         href={props.link}
-        style={{
-          backgroundColor: props.location === props.link ? "#f0f2f5" : "#fff",
-        }}
+        style={
+          location.pathname === props.link
+            ? {
+                backgroundColor: "#f0f2f5",
+              }
+            : {}
+        }
         onClick={(event) => {
           onClick(event, props.link);
           props.setLocation(props.link);
