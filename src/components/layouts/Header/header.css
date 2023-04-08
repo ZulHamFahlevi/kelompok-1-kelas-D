@@ -1,5 +1,4 @@
 .header {
-  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,10 +8,12 @@
   width: 100%;
   margin: auto;
 }
+
 .logo {
   width: 60px;
   height: 60px;
 }
+
 .searchCircle {
   width: 36px;
   height: 36px;
@@ -24,9 +25,11 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .searchCircle:hover {
   background-color: #f37524;
 }
+
 .searchLogo {
   color: #fff;
   font-size: 14px;
