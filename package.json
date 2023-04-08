@@ -15,11 +15,7 @@
     "antd": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-tooltip": "^5.10.5"
-=======
     "react-router-dom": "^6.10.0"
->>>>>>> 787c8cb00d3d9f4de9b70a73a554df94fc5400c9
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Card, Col, Row, Tooltip } from "antd";
-import { DATA_RECORDED, DATA_TOOLTIP } from "./constants";
+import { DATA_RECORDED } from "./constants";
 // import ReactTooltip from "react-tooltip";
 
 const RecordedLearning = () => {
@@ -28,59 +28,54 @@ const RecordedLearning = () => {
           return (
             <Col span={6}>
               <Tooltip title="Alterra Academy">
-              {/* <Tooltip title="Thanks for using antd. Have a nice day!" open> */}
-              <Card
-                key={index}
-                style={{
-                  width: 290,
-                  marginTop: 30,
-                }}
-              >
-                <img
-                  src={item.image}
-                  alt="img"
+                {/* <Tooltip title="Thanks for using antd. Have a nice day!" open> */}
+                <Card
+                  key={index}
                   style={{
-                    width: '100%',
-                    height: 'auto',
-                    objectFit: 'cover'
+                    width: 290,
+                    marginTop: 30,
                   }}
-                  // data-for="tool"
-                  // data-tip="Hello world"
-                  // id={`img${index}`}
-                  // data-tip="Welcome!"
-                  // data-for={`img${index}`}
-                />
-                {/* <ReactTooltip id="tool" /> */}
-                <div>
-                  <span>
-                    <p className="kelas">{item.kelas}</p>
-                    <h3>{item.name}</h3>
-                  </span>
-                  <hr />
-                  <span className="container-harga">
-                    <p
-                      style={{
-                        textAlign: "right",
-                        textDecoration: "line-through",
-                      }}
-                    >
-                      {item.price}
-                    </p>
-                    <h3 style={{ textAlign: "right" }}>{item.harga}</h3>
-                  </span>
-                </div>
-              </Card>
+                >
+                  <img
+                    src={item.image}
+                    alt="img"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                    // data-for="tool"
+                    // data-tip="Hello world"
+                    // id={`img${index}`}
+                    // data-tip="Welcome!"
+                    // data-for={`img${index}`}
+                  />
+                  {/* <ReactTooltip id="tool" /> */}
+                  <div>
+                    <span>
+                      <p className="kelas">{item.kelas}</p>
+                      <h3>{item.name}</h3>
+                    </span>
+                    <hr />
+                    <span className="container-harga">
+                      <p
+                        style={{
+                          textAlign: "right",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        {item.price}
+                      </p>
+                      <h3 style={{ textAlign: "right" }}>{item.harga}</h3>
+                    </span>
+                  </div>
+                </Card>
               </Tooltip>
               {/* </Tooltip> */}
               {/* <ReactTooltip id={`img${index}`} place="top" effect="solid" /> */}
             </Col>
           );
         })}
-        {/* {DATA_TOOLTIP.map((item, index) =>{
-          return(
-            
-          );
-        })} */}
       </Row>
 
       <button type="button" className="btn-primary" value="LOADMORE">
@@ -91,8 +86,6 @@ const RecordedLearning = () => {
 };
 
 export default RecordedLearning;
-
-// import React from "react";
 // import "./style.css";
 // import { Card, Col, Row } from "antd";
 // import { DATA_RECORDED } from "./constants";
