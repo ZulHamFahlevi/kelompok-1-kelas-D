@@ -108,34 +108,46 @@ section#myAccount .tabs-one {
   padding: 64px 0;
 }
 
-section#myAccount .tabs-one .ant-menu {
-  /* padding: 8px 0; */
+section#myAccount .ant-tabs {
+  width: 100%;
+}
+
+section#myAccount .ant-tabs-nav-list {
+  padding: 4px;
+  background-color: rgba(25, 52, 94, 1) !important;
   width: 100%;
   height: 68px;
   justify-content: space-between;
-  /* gap: 0; */
-  align-items: center;
-  background-color: rgba(25, 52, 94, 1);
-  font-size: 15px;
-  font-weight: 500;
-  color: #fff;
-}
-
-section#myAccount .tabs-one .ant-menu-item:hover {
-  color: #fff;
-}
-
-section#myAccount .tabs-one .ant-menu-item:hover::after {
-  content: none;
-}
-
-section#myAccount .tabs-one .ant-menu-item-selected {
-  background-color: #fff;
-}
-
-section#myAccount .tabs-one .ant-menu .ant-menu-item {
   text-align: center;
-  width: 378px;
-  /* flex-grow: 1; */
-  /* flex-basis: auto; */
+}
+
+section#myAccount .ant-tabs-tab {
+  margin: 0 !important;
+  color: #fff !important;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+section#myAccount .ant-tabs-tab-active {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+section#myAccount #tabs-one-panel-notifications .ant-tabs-nav-list {
+  background-color: transparent !important;
+  color: #000 !important;
+  width: max-content;
+}
+
+section#myAccount #tabs-one-panel-notifications .ant-tabs-tab-btn {
+  width: 100%;
+}
+
+section#myAccount #tabs-one-panel-notifications .ant-tabs-tab-btn::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10%;
+  height: 2px;
+  background-color: #000;
 }
