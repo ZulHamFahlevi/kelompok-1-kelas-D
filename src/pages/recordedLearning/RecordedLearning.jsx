@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Card, Col, Row, Tooltip } from "antd";
 import { DATA_RECORDED } from "./constants";
 // import ReactTooltip from "react-tooltip";
 
 const RecordedLearning = () => {
+  const [loadMore, setLoadMore] = useState(false);
   const styles = {
     fontFamily: '"Catamaran", Sans-serif',
     fontWeight: "bold",
@@ -15,7 +16,11 @@ const RecordedLearning = () => {
   //   document.documentElement.scrollTop = document.documentElement.clientHeight;
   //   document.documentElement.scrollLeft = document.documentElement.clientWidth;
   // }, []);
+  const dataMore = loadMore ? DATA_RECORDED.length : 8;
 
+  const handleLoadMore = () => {
+    setLoadMore(!loadMore);
+  };
   return (
     <div className="container-record">
       <h2 style={{ ...styles, marginTop: "40px" }}>Recorded Learning</h2>
@@ -24,7 +29,7 @@ const RecordedLearning = () => {
         dan relevan dengan industri IT.
       </p>
       <Row gutter={20} style={{ flexWrap: "wrap" }}>
-        {DATA_RECORDED.map((item, index) => {
+        {DATA_RECORDED.slice(0, dataMore).map((item, index) => {
           return (
             <Col span={6}>
               <Tooltip title="Alterra Academy">
@@ -78,8 +83,8 @@ const RecordedLearning = () => {
         })}
       </Row>
 
-      <button type="button" className="btn-primary" value="LOADMORE">
-        LOAD MORE
+      <button type="button" className="btn-primary" onClick={handleLoadMore}>
+        {loadMore ? "SHOW LESS" : "LOAD MORE"}
       </button>
     </div>
   );
