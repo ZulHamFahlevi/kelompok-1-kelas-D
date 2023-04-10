@@ -1,17 +1,14 @@
-import "./HomePage.css";
-import bookstack from "../../assets/icons/book_stack.png";
 import book from "../../assets/icons/book.png";
+import bookstack from "../../assets/icons/book_stack.png";
 import building from "../../assets/icons/building.png";
+import flutter from "../../assets/icons/flutter.png";
 import graduate from "../../assets/icons/graduate.png";
 import project from "../../assets/icons/project.png";
-import user from "../../assets/icons/user.png";
-import flutter from "../../assets/icons/flutter.png";
-import spring from "../../assets/icons/spring.png";
 import react from "../../assets/icons/react.png";
 import arrow from "../../assets/icons/right-arrow.png";
-import whatsapp from "../../assets/icons/whatsapp.png";
-import telegram from "../../assets/icons/telegram.png";
-import discord from "../../assets/icons/discord.png";
+import spring from "../../assets/icons/spring.png";
+import user from "../../assets/icons/user.png";
+import "./HomePage.css";
 const HomePage = () => {
   return (
     <>
@@ -19,7 +16,7 @@ const HomePage = () => {
       <div className="hero">
         <div className="hero_title_pad">
           <h1 className="text_white font_roboto ">
-            Sudah Siap Kerja <br /> Jadi <i>Programmer</i> ?
+            Sudah Siap Kerja <br /> Jadi <span className="text_black">Programmer</span> ?
           </h1>
           <p className="text_white font_mulish ">
             Belajar kapan pun, di mana pun, dari gadget apa pun, dengan Alterra
@@ -317,7 +314,10 @@ const HomePage = () => {
       {/* end if popular section  */}
       {/* level section  */}
       <div className="level_section">
-        <h1 className="popular_section_title text_center text_black font_roboto" style={{'marginTop':48}}>
+        <h1
+          className="popular_section_title text_center text_black font_roboto"
+          style={{ marginTop: 48 }}
+        >
           Tingkatan Kelas
         </h1>
         <div className="level_card_pad">
@@ -371,7 +371,7 @@ const HomePage = () => {
                 />
                 <div className="level_card_vertical_horizontal_title level_card_vertical_horizontal_item">
                   <h2 className="font_mulish size_21 text_black">
-                   Mastering Class
+                    Mastering Class
                   </h2>
                   <p className="font_mulish size_18 text_black">
                     Lvl 200 Class
@@ -383,7 +383,9 @@ const HomePage = () => {
               </div>
               <div className="level_card_box">
                 <p className="level_card_box_text font_opensans text_black size_16">
-                Mastering Class merupakan kelas tingkat lanjutan dari Fundamental Class, materinya diperuntukkan kepada programmer dengan level junior.
+                  Mastering Class merupakan kelas tingkat lanjutan dari
+                  Fundamental Class, materinya diperuntukkan kepada programmer
+                  dengan level junior.
                 </p>
               </div>
               <div className="black_button_pad">
@@ -409,7 +411,7 @@ const HomePage = () => {
                 />
                 <div className="level_card_vertical_horizontal_title level_card_vertical_horizontal_item">
                   <h2 className="font_mulish size_21 text_black">
-                  Advance Class
+                    Advance Class
                   </h2>
                   <p className="font_mulish size_18 text_black">
                     Lvl 300 Class
@@ -419,14 +421,19 @@ const HomePage = () => {
                   {/* <img src={arrow} alt="arrow_icon" width={40} /> */}
                 </div>
               </div>
-              <br/>
+              <br />
               <div className="level_card_box">
                 <p className="level_card_box_text font_opensans text_black size_16">
-                Advance Class adalah tingkatan lanjutan dari Mastering Class, materinya diperuntukkan kepada programmer dengan level middle-senior. 
+                  Advance Class adalah tingkatan lanjutan dari Mastering Class,
+                  materinya diperuntukkan kepada programmer dengan level
+                  middle-senior.
                 </p>
               </div>
               <div className="black_button_pad">
-                <div className="black_button " style={{'backgroundColor':'#818a91'}}>
+                <div
+                  className="black_button "
+                  style={{ backgroundColor: "#818a91" }}
+                >
                   <a href="#">
                     <span className="font_opensans text_white size_15">
                       Segera Hadir
@@ -441,60 +448,78 @@ const HomePage = () => {
       {/* end of level sectiion */}
       {/* testi_section */}
       <div className="testi_section">
-          <h1 className="testi_section_title text_center text_black font_roboto">
-            Testimoni Pengguna
-          </h1>
-          <div className="testi_card_pad">
-            <div className="test_card">
-                <div className="test_card_img">
-                      <img src="https://alta.id/wp-content/uploads/2021/12/4x6new-472x708.jpg.webp"/>
-                </div>
-                <p className="text_center size_18 font_mulish text_black text_card_title">
-                  "Awalnya sih Penasaran tentang pemrograman Golang yang ada cuma di alta saja, setelah berjalannya waktu, alhamdulillah dapat bimbingan dari mentor, sangat praktis dan mudah dipahami."
-                </p>
-                <h2 className="text_center size_21 font_roboto text_bold text_black" style={{'marginTop':24}}>
-                Rahmat Amri Fathoni
-                </h2>
-                <p className="text_center size_15 font_mulish text_black">
-                <i>Administrasi Tata Usaha</i>
-                </p>
+        <h1 className="testi_section_title text_center text_black font_roboto">
+          Testimoni Pengguna
+        </h1>
+        <div className="testi_card_pad">
+          <div className="test_card">
+            <div className="test_card_img">
+              <img src="https://alta.id/wp-content/uploads/2021/12/4x6new-472x708.jpg.webp" />
             </div>
-            {/* limit */}
-            <div className="test_card">
-                <div className="test_card_img">
-                      <img src="https://alta.id/wp-content/uploads/2021/12/circle-cropped-767x767.png.webp"/>
-                </div>
-                <p className="text_center size_18 font_mulish text_black text_card_title">
-                "Belajar di alterra academy benar benar dimentori dari dasar dan juga membuat kita aktif belajar mandiri dengan task task tugas hariannya. meskipun aktif belajar mandiri, kita tetap dipantau oleh para mentor jika menemukan hal hal yang kita tidak mengerti."
-                </p>
-                <h2 className="text_center size_21 font_roboto text_bold text_black" style={{'marginTop':24}}>
-                Muhammad RIkza Afnan
-                </h2>
-                <p className="text_center size_15 font_mulish text_black">
-                <i>Bekerja di Bidang IT</i>
-                </p>
-            </div>
-            {/* limit */}
-            <div className="test_card">
-                <div className="test_card_img">
-                      <img src="https://alta.id/wp-content/uploads/2021/12/IRMAN-PAMBUDI-552x577.jpg.webp"/>
-                </div>
-                <p className="text_center size_18 font_mulish text_black text_card_title">
-                "Alterra Academy memiliki materi yang terstruktur dan mudah dipahami. Mentor dan staf sangat membantu saat proses belajar, jangan khawatir ketika kita mengalami kesulitan memahami materi."
-                </p>
-                <h2 className="text_center size_21 font_roboto text_bold text_black" style={{'marginTop':24}}>
-                Irman Pambudi
-                </h2>
-                <p className="text_center size_15 font_mulish text_black">
-                <i>Pegawai Swasta</i>
-                </p>
-            </div>
+            <p className="text_center size_18 font_mulish text_black text_card_title">
+              "Awalnya sih Penasaran tentang pemrograman Golang yang ada cuma di
+              alta saja, setelah berjalannya waktu, alhamdulillah dapat
+              bimbingan dari mentor, sangat praktis dan mudah dipahami."
+            </p>
+            <h2
+              className="text_center size_21 font_roboto text_bold text_black"
+              style={{ marginTop: 24 }}
+            >
+              Rahmat Amri Fathoni
+            </h2>
+            <p className="text_center size_15 font_mulish text_black">
+              <i>Administrasi Tata Usaha</i>
+            </p>
           </div>
+          {/* limit */}
+          <div className="test_card">
+            <div className="test_card_img">
+              <img src="https://alta.id/wp-content/uploads/2021/12/circle-cropped-767x767.png.webp" />
+            </div>
+            <p className="text_center size_18 font_mulish text_black text_card_title">
+              "Belajar di alterra academy benar benar dimentori dari dasar dan
+              juga membuat kita aktif belajar mandiri dengan task task tugas
+              hariannya. meskipun aktif belajar mandiri, kita tetap dipantau
+              oleh para mentor jika menemukan hal hal yang kita tidak mengerti."
+            </p>
+            <h2
+              className="text_center size_21 font_roboto text_bold text_black"
+              style={{ marginTop: 24 }}
+            >
+              Muhammad RIkza Afnan
+            </h2>
+            <p className="text_center size_15 font_mulish text_black">
+              <i>Bekerja di Bidang IT</i>
+            </p>
+          </div>
+          {/* limit */}
+          <div className="test_card">
+            <div className="test_card_img">
+              <img src="https://alta.id/wp-content/uploads/2021/12/IRMAN-PAMBUDI-552x577.jpg.webp" />
+            </div>
+            <p className="text_center size_18 font_mulish text_black text_card_title">
+              "Alterra Academy memiliki materi yang terstruktur dan mudah
+              dipahami. Mentor dan staf sangat membantu saat proses belajar,
+              jangan khawatir ketika kita mengalami kesulitan memahami materi."
+            </p>
+            <h2
+              className="text_center size_21 font_roboto text_bold text_black"
+              style={{ marginTop: 24 }}
+            >
+              Irman Pambudi
+            </h2>
+            <p className="text_center size_15 font_mulish text_black">
+              <i>Pegawai Swasta</i>
+            </p>
+          </div>
+        </div>
       </div>
       {/* end of testi section */}
       {/* langkah_section */}
       <div className="langkah_section">
-        <h1 className="size_42 font_roboto text_black">Mulai langkahmu hari ini!</h1>
+        <h1 className="size_42 font_roboto text_black">
+          Mulai langkahmu hari ini!
+        </h1>
         <div className="langkah_button">
           <h2 className="text_white size_21 font_opensans">
             Ambil Kelasmu Sekarang
@@ -502,32 +527,6 @@ const HomePage = () => {
         </div>
       </div>
       {/* end of lagkah section */}
-      {/* contct section */}
-      <div className="contact_section">
-        <div className="contact_card">
-          <img src={discord}  alt="discor logo" width={50}/>
-          <div className="contact_card_text">
-            <h3 className="font_mulish size_21 trxt_black">Gabung ke Komunitas Alchemy</h3>
-            <p className="font_mulish size_16 trxt_black"><i>Alterra Academy Tech Community</i></p>
-          </div>
-        </div>
-        {/* limit */}
-        <div className="contact_card">
-          <img src={telegram}  alt="discor logo" width={50}/>
-          <div className="contact_card_text">
-            <h3 className="font_mulish size_21 trxt_black">Dapatkan Informasi Terbaru</h3>
-            <p className="font_mulish size_16 trxt_black"><i>Melalui Group Telegram Alterra Academy</i></p>
-          </div>
-        </div>
-        {/* limit */}
-        <div className="contact_card">
-          <img src={whatsapp}  alt="discor logo" width={50}/>
-          <div className="contact_card_text">
-            <h3 className="font_mulish size_21 trxt_black">Butuh Bantuan?</h3>
-            <p className="font_mulish size_16 trxt_black"><i>Hubungi kami melalui WhatsApp</i></p>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
