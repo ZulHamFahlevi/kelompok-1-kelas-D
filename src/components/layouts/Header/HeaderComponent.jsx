@@ -1,19 +1,15 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row } from "antd";
-import { useEffect, useState } from "react";
 import { logoOne } from "../../../assets";
 import DropdownComponent from "../../component/dropdown/dropdown";
 import { menuList } from "./constants";
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import React from "react";
 
 export default function HeaderComponent() {
-  const [location, setLocation] = useState("/");
+  const location = useLocation();
 
-  useEffect(() => {
-    setLocation(window.location.pathname);
-  }, []);
   return (
     <div className="header">
       <Link to="/">
@@ -22,18 +18,13 @@ export default function HeaderComponent() {
       <div className="searchCircle">
         <FontAwesomeIcon icon={faMagnifyingGlass} className="searchLogo" />
       </div>
-      <Row style={{ marginLeft: "auto" }}>
+      <ul style={{ marginLeft: "auto" }}>
         {menuList.map((menu, idx) => (
-          <DropdownComponent
-            key={idx}
-            title={menu.title}
-            submenu={menu.subMenu}
-            link={menu.link}
-            location={location}
-            setLocation={setLocation}
-          />
+          <React.Fragment key={idx}>
+            <DropdownComponent menu={menu} pathname={location.pathname} />
+          </React.Fragment>
         ))}
-      </Row>
+      </ul>
     </div>
   );
 }
