@@ -1,0 +1,40 @@
+.partner_section {
+  background-color: #f0f4fa;
+  margin-top: 70px;
+}
+
+.partner_section--container {
+  padding: 48px 12px 32px;
+  text-align: center;
+}
+
+.partner_section_title {
+  font-weight: 700;
+  margin-bottom: 30px !important;
+  color: #19345f !important;
+}
+
+.partner_logo_pad img {
+  transition: 0.4s;
+  max-width: 130px;
+  width: 100%;
+  height: 100%;
+}
+
+.partner_logo_pad img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  .partner_section--container {
+    padding: 48px 0 32px;
+  }
+
+  .partner_logo_pad {
+    gap: 30px;
+  }
+
+  .partner_logo_pad img {
+    max-width: 200px;
+  }
+}

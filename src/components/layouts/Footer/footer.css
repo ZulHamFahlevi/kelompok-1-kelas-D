@@ -1,10 +1,10 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   background-color: #273044;
-}
+} */
 .footerLogo {
   width: 103px;
   height: 56px;

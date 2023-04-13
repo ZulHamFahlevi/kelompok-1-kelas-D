@@ -30,10 +30,6 @@ export const menuList = [
   {
     title: "My Account",
     link: "/my-account",
-    subMenu: [
-      {
-        label: "Log Out",
-      },
-    ],
+    subMenu: [],
   },
 ];

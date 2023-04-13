@@ -7,8 +7,8 @@ export default function LayoutComponent(props) {
     <Layout style={{ backgroundColor: "white" }}>
       <HeaderComponent />
       {props.children}
-      <SocialComponent />
-      <FooterComponent />
+      {/* <SocialComponent /> */}
+      {/* <FooterComponent /> */}
     </Layout>
   );
 }

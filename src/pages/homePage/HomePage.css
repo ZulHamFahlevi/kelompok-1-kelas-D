@@ -1,538 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans&family=Roboto&display=swap');
-
-.font_roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.font_mulish {
-    font-family: 'Mulish', sans-serif;
-}
-
-.font_opensans {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.text_white {
-    color: white;
-}
-
-.text_black {
-    color: #19345f;
-}
-
-.text_more_black {
-    color: #273044;
-}
-
-.text_center {
-    text-align: center;
-}
-
-.text_left {
-    text-align: left;
-}
-
-.size_54 {
-    font-size: 54px;
-}
-
-.size_21 {
-    font-size: 21px;
-}
-
-.size_24 {
-    font-size: 24px;
-}
-
-.size_27 {
-    font-size: 27px;
-}
-
-.size_42 {
-    font-size: 42px;
-}
-
-.size_16 {
-    font-size: 16px;
-}
-
-.size_15 {
-    font-size: 15px;
-}
-
-.size_18 {
-    font-size: 18px;
-}
-
-.font_bold {
-    font-weight: bold;
-}
-
-.hero {
-    background-image: url("https://alta.id/wp-content/uploads/2022/09/back1-e1664447544475.png");
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.hero_title_pad {
-    padding-left: 160px;
-}
-
-.hero_title_pad h1 {
-    font-size: 54px;
-    line-height: 70px;
-}
-
-.hero_title_pad p {
-    font-size: 21px;
-    margin-top: 28px;
-    max-width: 600px;
-    line-height: 1.5em;
-    margin-bottom: 42px;
-}
-
-.round_button {
-    background-color: #f37524;
-    max-width: 182px;
-    height: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.round_button:hover {
-    background-color: #b74800;
-    max-width: 182px;
-    height: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.round_button a {
-    text-decoration: none;
-}
-
-.round_button a span {
-    font-size: 16px;
-    padding: 15px 3px;
-    font-weight: bold;
-}
-
-.benefit_section_title {
-    margin-top: 70px;
-    font-size: 32px;
-}
-
-.benefit_card_pad {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.custom_card {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    max-width: 480px;
-    min-width: 120px;
-    padding: 40px 20px;
-    border-radius: 30px 30px 30px 30px;
-    margin: 12px;
-}
-
-.custom_card h3 {
-    margin-top: 24px;
-    margin-bottom: 18px;
-}
-
-.partner_section {
-    background-color: #F0F4FA;
-    margin-top: 50px;
-}
-
-.partner_section_title {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.partner_logo_pad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-.partner_logo {
-    margin: 0px 50px;
-    transition: 0.4s;
-}
-
-.partner_logo:hover {
-    transform: scale(1.1);
-}
-
-.popular_section_title {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.testi_section {
-    margin-top: 100px;
-}
-
-.testi_section_title {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.testi_card_pad {
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.test_card {
-    border-radius: 30px 30px 30px 30px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #F37524;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin: 0px 20px 0px 20px;
-    text-align: center;
-    max-width: 360px;
-    padding: 64px 32px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-.text_card_title {
-    margin-top: 32px;
-}
-
-.test_card_img {
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.test_card_img img {
-    height: 80px;
-    width: 80px;
-
-}
-
-.popular_card_pad {
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.popular_card {
-    border-radius: 30px 30px 30px 30px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #19345f;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    margin: 0px 20px 0px 20px;
-    text-align: center;
-    max-width: 360px;
-    padding: 10px;
-}
-
-.popular_card p {
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.price_strip {}
-
-.popular_padder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
 .orange_button {
-    background-color: #F37524;
-    padding: 12px 14px;
-    border-radius: 3px;
-    width: 123px;
+  background-color: #f37524;
+  padding: 12px 14px;
+  border-radius: 3px;
+  width: 123px;
 }
 
 .orange_button a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .black_button_pad {
-    display: flex;
-    justify-content: center;
-    margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
 }
 
 .black_button {
-    background-color: #19345f;
-    padding: 12px 14px;
-    border-radius: 3px;
-    width: 123px;
-    text-align: center;
+  background-color: #19345f;
+  padding: 12px 14px;
+  border-radius: 3px;
+  width: 123px;
+  text-align: center;
 }
 
 .black_button a {
-    text-decoration: none;
-}
-
-.level_card {
-    margin-left: 22px;
-    margin-right: 22px;
-}
-
-.level_card_pad {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.level_card_vertical_horizontal {
-    display: flex;
-    flex-direction: row;
-}
-
-.level_card_vertical_horizontal_item {
-    padding: 14px;
-}
-
-.level_card_vertical_horizontal_title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.arrow_level {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.level_card_box {
-    background-color: #F0F4FA;
-    border-radius: 15px;
-    max-width: 370px;
-    padding: 24px;
-    margin-top: 24px;
-    text-align: center;
+  text-decoration: none;
 }
 
 .langkah_section {
-    background-color: #F0F4FA;
-    display: flex;
+  background-color: #f0f4fa;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  margin-top: 100px;
+}
+
+.langkah_button {
+  background-color: #19345f;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.contact_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+.contact_card:hover {
+  background-color: #f0f4fa;
+  border-radius: 20px;
+}
+
+.contact_card_text {
+  margin-left: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .langkah_section {
+    background-color: #f0f4fa;
+    display: block;
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
     height: 20vh;
     margin-top: 100px;
-}
+    padding: 20px;
+  }
 
-.langkah_button {
+  .langkah_section h1 {
+    font-size: 32px;
+  }
+
+  .langkah_button {
     background-color: #19345f;
     padding: 20px 40px;
     border-radius: 5px;
-}
+    margin-top: 24px;
+  }
 
-.contact_section {
-    display: flex;
+  .langkah_section h2 {
+    font-size: 22px;
+  }
+
+  .contact_section {
+    display: block;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 100px;
-}
-
-.contact_card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    padding: 20px;
-}
-
-.contact_card:hover {
-    background-color: #F0F4FA;
-    border-radius: 20px;
-}
-
-.contact_card_text {
-    margin-left: 18px;
-}
-
-@media screen and (max-width:768px) {
-    .benefit_card_pad {
-        display: block;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .partner_logo_pad {
-        display: grid;
-        /* column-gap: 10px; */
-
-        grid-template-columns: repeat(auto-fill);
-    }
-
-    .partner_logo {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        margin: 0px 0px;
-        transition: 0.4s;
-        width: 100px;
-    }
-
-    .popular_card_pad {
-        margin-top: 24px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .popular_card {
-        border-radius: 30px 30px 30px 30px;
-        border-style: solid;
-        border-width: 4px;
-        border-color: #19345f;
-        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        margin: 0px 20px 0px 20px;
-        text-align: center;
-        max-width: 360px;
-        padding: 10px;
-        margin-top: 24px;
-    }
-
-    .benefit_section_title {
-        margin-top: 70px;
-        font-size: 22px;
-    }
-
-    .hero_title_pad {
-        text-align: center;
-        padding-left: 0px;
-    }
-
-    .hero_title_pad h1 {
-        font-size: 32px;
-        line-height: 52px;
-    }
-
-    .hero_title_pad p {
-        font-size: 18px;
-        margin-top: 28px;
-        max-width: 600px;
-        line-height: 1.5em;
-        margin-bottom: 42px;
-        padding: 10px;
-    }
-
-    .benefit_card_pad {
-        display: block;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .pad_button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .round_button {
-        background-color: #f37524;
-        width: 182px;
-        height: 46px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        cursor: pointer;
-    }
-
-    .level_card_pad {
-        display: block;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .level_card {
-        margin-left: 22px;
-        margin-right: 22px;
-        margin-top: 24px;
-    }
-
-    .testi_card_pad {
-        margin-top: 24px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .test_card {
-        border-radius: 30px 30px 30px 30px;
-        border-style: solid;
-        border-width: 4px;
-        border-color: #F37524;
-        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        margin: 0px 20px 0px 20px;
-        text-align: center;
-        max-width: 360px;
-        padding: 64px 32px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        margin-top: 24px;
-    }
-
-    .langkah_section {
-        background-color: #F0F4FA;
-        display: block;
-        text-align: center;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 20vh;
-        margin-top: 100px;
-        padding: 20px;
-    }
-
-    .langkah_section h1 {
-        font-size: 32px;
-    }
-
-    .langkah_button {
-        background-color: #19345f;
-        padding: 20px 40px;
-        border-radius: 5px;
-        margin-top: 24px;
-    }
-
-    .langkah_section h2 {
-        font-size: 22px;
-    }
-
-    .contact_section {
-        display: block;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 100px;
-    }
+  }
 }

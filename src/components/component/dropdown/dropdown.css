@@ -1,12 +1,11 @@
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-container {
   display: flex;
   align-items: center;
-  padding: 13px 20px;
+  padding: 12px;
   font-family: "Mulish", sans-serif;
   cursor: pointer;
   position: relative;
@@ -62,4 +61,15 @@ i {
 
 a:hover {
   color: #19435f;
+}
+
+@media (min-width: 992px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-container {
+    padding: 13px 20px;
+  }
 }
