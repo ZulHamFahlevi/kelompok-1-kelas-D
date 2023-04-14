@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./dropdown.css";
 
 export default function DropdownComponent({ menu, pathname }) {
