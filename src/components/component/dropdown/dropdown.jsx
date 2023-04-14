@@ -1,6 +1,7 @@
 import "./dropdown.css";
 import React from "react";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function DropdownComponent(props) {
   const location = useLocation();
@@ -37,7 +38,9 @@ export default function DropdownComponent(props) {
           props.setLocation(props.link);
         }}
       >
-        <span className="menu-title">{props.title}</span>
+        <Link className="menu-title" to={props.link}>
+          {props.title}
+        </Link>
         {props.submenu.length > 0 && <i className="bx bxs-down-arrow"></i>}
       </a>
       {props.submenu.length > 0 ? (
