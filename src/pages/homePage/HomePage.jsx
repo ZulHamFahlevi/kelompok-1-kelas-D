@@ -9,6 +9,7 @@ import Steps from "../../components/component/steps/steps";
 const HomePage = () => {
   return (
     <>
+    <p>asdasda</p>
       <Hero />
       <Benefits />
       <Partners />
