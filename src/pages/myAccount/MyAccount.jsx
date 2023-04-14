@@ -14,23 +14,10 @@ import {
   Tabs,
 } from "antd";
 import { CARD_DATA, DROPDOWN_ITEMS, TAB_ITEMS } from "./constants";
-// import Notifications from "./Notifications/Notifications";
 
 const MyAccount = () => {
   const { Title } = Typography;
   const { Meta } = Card;
-  // const { TabPane } = Tabs;
-
-  const [jmlNotif, setJmlNotif] = useState(0);
-  // const [cardData, setCardData] = useState(CARD_DATA);
-
-  console.log(CARD_DATA);
-  const [current, setCurrent] = useState("1");
-
-  const onClick = (e) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-  };
 
   return (
     <>
@@ -71,12 +58,7 @@ const MyAccount = () => {
             <Row>
               <Card
                 style={{ width: 270, margin: "0 20px" }}
-                cover={
-                  <img
-                    alt="example"
-                    src="https://alta.id/wp-content/uploads/elementor/thumbs/React-KM-pklhkyh4e4dv6bf5mm0u3ekdzi7m2loboygwvk5l56.png"
-                  />
-                }
+                cover={<img alt="example" src={CARD_DATA.img} />}
               >
                 <a
                   href="#"

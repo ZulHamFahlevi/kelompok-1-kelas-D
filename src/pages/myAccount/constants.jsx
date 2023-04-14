@@ -55,3 +55,22 @@ export const TAB_ITEM_NOTIFICATIONS = [
     children: "read",
   },
 ];
+
+// NOTIFICATIONS DROPDOWN
+export const NOTIF_READ_DROPDOWN = [
+  {
+    label: <a href="https://www.antgroup.com">1st menu item</a>,
+    key: "0",
+  },
+  {
+    label: <a href="https://www.aliyun.com">2nd menu item</a>,
+    key: "1",
+  },
+  {
+    type: "divider",
+  },
+  {
+    label: "3rd menu item",
+    key: "3",
+  },
+];
