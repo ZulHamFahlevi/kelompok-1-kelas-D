@@ -1,5 +1,5 @@
 import { Layout } from "antd";
-// import FooterComponent from "./Footer/FooterComponent";
+import FooterComponent from "./Footer/FooterComponent";
 import HeaderComponent from "./Header/HeaderComponent";
 import SocialComponent from "./Social/SocialComponent";
 export default function LayoutComponent(props) {
@@ -8,7 +8,7 @@ export default function LayoutComponent(props) {
       <HeaderComponent />
       {props.children}
       <SocialComponent />
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </Layout>
   );
 }

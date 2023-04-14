@@ -10,7 +10,7 @@ export default function SocialComponent() {
   return (
     <div className="social_media_section">
       <Container className="social_media_section--container">
-        <Row gutter={[24, 24]}>
+        <Row>
           {social.map((sm) => (
             <Col xs={24} sm={12} md={8} key={sm.id}>
               <Card bodyStyle={{ padding: 20 }} className="social_media_card">
