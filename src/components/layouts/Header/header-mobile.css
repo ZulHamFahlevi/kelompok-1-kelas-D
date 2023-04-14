@@ -1,0 +1,8 @@
+.nav-mobile {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+}

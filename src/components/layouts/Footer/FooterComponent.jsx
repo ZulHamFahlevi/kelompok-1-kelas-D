@@ -1,50 +1,74 @@
-import { Layout } from "antd";
+import { Link } from "react-router-dom";
+
+import { Col, Layout, Row, Typography } from "antd";
+
 import { footerLogo } from "../../../assets";
 import { footerData, icons } from "./constants";
-import "./footer.css";
-export default function FooterComponent() {
-  const { Footer } = Layout;
-  return (
-    <Footer className="container">
-      <div className="leftContainer">
-        <img src={footerLogo} alt="Alterra Academy" className="footerLogo" />
-        <div style={{ paddingBottom: 16 }}>
-          <a className="link" style={{ marginRight: 15 }}>
-            Kebijakan Privasi
-          </a>
-          <a className="link">Izin Usaha</a>
-        </div>
-        <p className="credit">&#169; 2002 Alterra. All rights reserved</p>
-      </div>
 
-      <div className="midContainer">
-        <ul>
-          {footerData.map((item, idx) => (
-            <li key={idx}>
-              <a href="#" key={idx} className="link">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="rightContainer">
-        <h4>Hubungi Kami</h4>
-        <p className="address">
-          {
-            "Jalan Raya Tidar, Nomor 23, Karangbesuki,\nKota Malang, Jawa Timur. 65146."
-          }
-        </p>
-        <ul className="icons">
-          {icons.map((icon, idx) => (
-            <li key={idx}>
-              <div className="icon">
-                <i className={icon} style={{ color: "white", fontSize: 22 }} />
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+import Container from "../../component/container/container";
+
+import "./footer.css";
+
+const { Footer } = Layout;
+
+export default function FooterComponent() {
+  return (
+    <Footer className="footer_section">
+      <Container className="footer_section--container">
+        <Row>
+          <Col xs={24} md={8}>
+            <img
+              src={footerLogo}
+              alt="Alterra Academy"
+              className="footer_logo"
+            />
+            <div style={{ paddingTop: 32 }} />
+            <Row align="middle">
+              <Link className="footer_link font_opensans" to="#">
+                Kebijakan Privasi
+              </Link>
+              <Link className="footer_link font_opensans" to="#">
+                Izin Usaha
+              </Link>
+            </Row>
+            <div style={{ paddingTop: 32 }} />
+            <Typography.Text className="footer_credit">
+              &#169; 2002 Alterra. All rights reserved
+            </Typography.Text>
+          </Col>
+          <Col xs={24} md={8}>
+            <ul className="footer_ulist">
+              {footerData.map((item, idx) => (
+                <li key={idx} className="footer_list">
+                  <Link to="#" className="footer_link font_opensans">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Col>
+          <Col xs={24} md={8}>
+            <Typography.Title level={4} className="font_mulish footer_contact">
+              Hubungi Kami
+            </Typography.Title>
+            <Typography.Text className="font_mulish footer_address">
+              Jalan Raya Tidar, Nomor 23, Karangbesuki, <br /> Kota Malang, Jawa
+              Timur. 65146.
+            </Typography.Text>
+
+            <Row align="middle" style={{ paddingTop: 20, gap: 20 }}>
+              {icons.map((icon, idx) => (
+                <Link className="footer_social_media" key={idx}>
+                  <i
+                    className={icon}
+                    style={{ color: "white", fontSize: 22 }}
+                  />
+                </Link>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </Footer>
   );
 }

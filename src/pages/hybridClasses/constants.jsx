@@ -20,15 +20,7 @@ import ReactImg3 from "../../assets/mastering/react.png";
 import SpringImg3 from "../../assets/mastering/spring.png";
 import TsImg from "../../assets/mastering/ts.png";
 import VueImg3 from "../../assets/mastering/vue.png";
-import currency from "currency.js";
-
-var rupiah = (value) =>
-  currency(value, {
-    fromCents: true,
-    separator: ".",
-    symbol: "Rp",
-    precision: 3,
-  });
+import { currencyFormatter } from "../../helpers/currencyFormatter";
 
 const DATA_FUNDAMENTAL = [
   {
@@ -36,42 +28,42 @@ const DATA_FUNDAMENTAL = [
     kelas: "Fundamental Class",
     title: "Fundamental Java Spring Boot",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: QAImg,
     kelas: "Fundamental Class",
     title: "Fundamental Quality Engineer",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: FlutterImg,
     kelas: "Fundamental Class",
     title: "Fundamental Mobile Development",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: FigmaImg,
     kelas: "Fundamental Class",
     title: "Fundamental UI/UX",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: GolangImg,
     kelas: "Fundamental Class",
     title: "Fundamental Back-End Engineer with Golang",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: ReactImg,
     kelas: "Fundamental Class",
     title: "Fundamental Front-End Engineer with React",
     member: "",
-    price: rupiah(199000).format(),
+    price: currencyFormatter("Rp", "199000"),
   },
 ];
 
@@ -146,57 +138,57 @@ const DATA_MASTERING = [
     image: GolangImg3,
     kelas: "Mastering Class",
     title: "Mastering Back-End Engineering with Golang",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: ReactImg3,
     kelas: "Mastering Class",
     title: "Mastering Front-End Development with React JS",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: SpringImg3,
     kelas: "Mastering Class",
     title: "Mastering Back-End Development with Java Spring Boot",
-    member: rupiah(1200000).format(),
-    price: rupiah(599000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: FigmaImg3,
     kelas: "Mastering Class",
     title: "Mastering UI/UX Designer",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: QAImg3,
     kelas: "Mastering Class",
     title: "Mastering Quality Engineer",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: FlutterImg3,
     kelas: "Mastering Class",
     title: "Mastering Mobile Development with Flutter",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: TsImg,
     kelas: "Mastering Class",
     title: "Typescript with React JS",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: VueImg3,
     kelas: "Mastering Class",
     title: "Mastering Front-End Development with Vue JS",
-    member: rupiah(800000).format(),
-    price: rupiah(399000).format(),
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
 ];
 
