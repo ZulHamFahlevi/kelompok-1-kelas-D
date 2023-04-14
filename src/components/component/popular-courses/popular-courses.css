@@ -74,10 +74,12 @@
   height: 40px;
   color: #ffffff;
   margin: auto;
+  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .popular_btn:hover {
   background-color: #19345f;
+  transform: scale(1.1);
 }
 
 @media (min-width: 992px) {

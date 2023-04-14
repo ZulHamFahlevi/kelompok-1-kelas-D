@@ -27,22 +27,6 @@
   text-decoration: none;
 }
 
-.langkah_section {
-  background-color: #f0f4fa;
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 20vh;
-  margin-top: 100px;
-}
-
-.langkah_button {
-  background-color: #19345f;
-  padding: 20px 40px;
-  border-radius: 5px;
-}
-
 .contact_section {
   display: flex;
   justify-content: space-evenly;
@@ -68,32 +52,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .langkah_section {
-    background-color: #f0f4fa;
-    display: block;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20vh;
-    margin-top: 100px;
-    padding: 20px;
-  }
-
-  .langkah_section h1 {
-    font-size: 32px;
-  }
-
-  .langkah_button {
-    background-color: #19345f;
-    padding: 20px 40px;
-    border-radius: 5px;
-    margin-top: 24px;
-  }
-
-  .langkah_section h2 {
-    font-size: 22px;
-  }
-
   .contact_section {
     display: block;
     justify-content: space-evenly;
