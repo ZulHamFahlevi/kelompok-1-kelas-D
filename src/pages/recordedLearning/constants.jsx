@@ -117,3 +117,42 @@ export const DATA_RECORDED = [
     harga: "Rp.69.000",
   },
 ];
+
+
+export const DATA_PREVIEW = [
+  {
+    key: "1",
+    title: "Strategi Berkarir di Startup Bermodal Ijazah SMK",
+    image : "https://alta.id/wp-content/uploads/avatars/45/60c77aeb455bf-bpfull.jpg",
+    // icon : "https://cdn-icons.flaticon.com/svg/3916/3916593.svg?token=exp=1681229535~hmac=5e9679c775bd97c0d47161ffffe33ca1",
+    // name :"Teacher",
+    altr :"ALTERRA ACADEMY",
+    categ:"Category :",
+    kelas: "Tips and Tricks to Pass Hackerrank Test",
+    record : "RECORDED LEARNING",
+    desc :"Description",
+    curr :"Curriculum",
+    rev : "Review",
+    imagee : "https://alta.id/wp-content/uploads/elementor/thumbs/photo_2022-06-24-09.52.43-pqrnns66bcz1yxu2xgtsxzht8n69zmdxcfhrwsn0v4.jpeg",
+    latar: "Latar Belakang",
+    welcome : "Selamat Datang di Alterra Academy",
+    hack : "Hackerrank merupakan suatu platform yang dapat kita gunakan untuk mengasah maupun mengetahui kemampuan kita dalam bidang programming melaui test dengan berbagai tingkat kesulitan. Sebagian besar unicorn dan start up besar telah menggunakan hackerrank test sebagai standard untuk menjadi software engineer di perusahaan mereka.",
+    sesi : "Pada sesi live kali ini, kamu akan mempelajari mengenai apa itu hackerrank, cara mengerjakan hackerrank serta bagaimana untuk menyelesaikan problem yang terdapat pada soal hackerrank. Tentu Speaker yang dihadirkan merupakan Software Engineer berpengalaman yang juga merupakan academic Instructor di alta.id",
+    karir : "Bagi kamu yang ingin memulai karir dan sedang mencari pekerjaan dalam bidang IT, sesi live ini diharapkan dapat membantu persiapan kamu untuk mengerjakan test Hackerrank dan memperoleh hasil yang maksimal sehingga meningkatkan peluang untuk masuk oleh Hiring Company.",
+    materi :"Materi yang akan dipaparkan",
+    items : "Perkenalan hackerrank​",
+    items1: "Persiapan menghadapi hackerrank",
+    items2 : "Cara mengerjakan hackerrank",
+    items3 : "Cara menyelesaikan problem di hackerrank",
+    items4:"Live coding test",
+    fasilitas : "Fasilitas Kelas",
+    fas : "fasilitas yang kalian dapatkan ketika mengambil kelas Recorded Learning",
+    cert :"e-certificate of Participation",
+    unli :"Unlimited Access*",
+    study:"Study in Flexible time",
+    self : "Self Paced Learning",
+    study1: "Study Duration : 2 days",
+    syarat : "*Syarat mendapatkan sertifikat adalah saat penyelesaian kelas tidak lebih dari 2 hari, apabila tidak dapat menyelesaikan kelas maka berakhir kesempatan mendapatkan sertifikat dan akses kelas selamanya",
+    whis : "Add to Wishlist"
+  },
+];

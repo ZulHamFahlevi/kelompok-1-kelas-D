@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useCallback, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Record.css";
 import { Card, Col, Row, Tooltip } from "antd";
 import { DATA_RECORDED } from "./constants";
-// import ReactTooltip from "react-tooltip";
 
 const RecordedLearning = () => {
   const [loadMore, setLoadMore] = useState(false);
@@ -12,55 +12,44 @@ const RecordedLearning = () => {
     fontSize: "2em",
     color: "rgb(28, 28, 92)",
   };
-  // React.useEffect(() => {
-  //   document.documentElement.scrollTop = document.documentElement.clientHeight;
-  //   document.documentElement.scrollLeft = document.documentElement.clientWidth;
-  // }, []);
   const dataMore = loadMore ? DATA_RECORDED.length : 8;
+
+  const handleClick = useCallback((item) => {
+    setSelectedClass(item);
+    history.push("/PreviewPage");
+  }, [history]);
 
   const handleLoadMore = () => {
     setLoadMore(!loadMore);
   };
+
   return (
     <div className="container-record">
-      <h2 style={{ ...styles, marginTop: "40px" }}>Recorded Learning</h2>
+      <h2 style={{ ...styles, marginTop: "30px" , fontWeight: "bold"}}>Recorded Learning</h2>
       <p style={{ fontFamily: "'Catamaran', sans-serif", marginTop: "2rem" }}>
         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru
         dan relevan dengan industri IT.
       </p>
-      <Row gutter={20} style={{ flexWrap: "wrap" }}>
+      <Row gutter={10} style={{ flexWrap: "wrap"}}>
         {DATA_RECORDED.slice(0, dataMore).map((item, index) => {
           return (
-            <Col span={6}>
+            <Col span={6} style={{ display: "flex", alignItems: "stretch"}}>
               <Tooltip title="Alterra Academy">
-                {/* <Tooltip title="Thanks for using antd. Have a nice day!" open> */}
                 <Card
                   key={index}
                   style={{
-                    width: 290,
+                    width: 300,
                     marginTop: 30,
+                    display: "flex",
+                    flexDirection: "column"
                   }}
+                  cover={<img alt="img" src={item.image}/>}
                 >
-                  <img
-                    src={item.image}
-                    alt="img"
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "cover",
-                    }}
-                    // data-for="tool"
-                    // data-tip="Hello world"
-                    // id={`img${index}`}
-                    // data-tip="Welcome!"
-                    // data-for={`img${index}`}
-                  />
-                  {/* <ReactTooltip id="tool" /> */}
                   <div>
-                    <span>
-                      <p className="kelas">{item.kelas}</p>
-                      <h3>{item.name}</h3>
-                    </span>
+                    <p>{item.kelas}</p>
+                    <Link to="/PreviewPage" onClick={() => handleClick(item)}>
+                      <h3 style={{color:"black"}}>{item.name}</h3>
+                    </Link>
                     <hr />
                     <span className="container-harga">
                       <p
@@ -76,8 +65,6 @@ const RecordedLearning = () => {
                   </div>
                 </Card>
               </Tooltip>
-              {/* </Tooltip> */}
-              {/* <ReactTooltip id={`img${index}`} place="top" effect="solid" /> */}
             </Col>
           );
         })}
@@ -91,83 +78,3 @@ const RecordedLearning = () => {
 };
 
 export default RecordedLearning;
-// import "./style.css";
-// import { Card, Col, Row } from "antd";
-// import { DATA_RECORDED } from "./constants";
-// import ReactTooltip from "react-tooltip";
-
-// const RecordedLearning = () => {
-//   // const { Meta } = Card;
-
-//   const styles = {
-//     fontFamily: '"Catamaran", Sans-serif',
-//     // fontStyle: 'italic',
-//     fontWeight: "bold",
-//     fontSize: "2em",
-//     color: "rgb(28, 28, 92)",
-//   };
-
-//   return (
-//     <div className="container-record">
-//       <h2 style={{ ...styles, marginTop: "40px" }}>Recorded Learning</h2>
-//       <p style={{ fontFamily: "'Catamaran', sans-serif", marginTop: "2rem" }}>
-//         Sebuah pelatihan singkat di mana anda akan mempelajari ilmu-ilmu terbaru
-//         dan relevan dengan industri IT.
-//       </p>
-//       <Row gutter={20} style={{ flexWrap: "wrap" }}>
-//         {DATA_RECORDED.map((item, index) => {
-//           return (
-//             <Col span={6}>
-//               <Card
-//                 key={index}
-//                 style={{
-//                   width: 280,
-//                   marginTop: 30,
-//                 }}
-//                 cover={
-//                   <>
-//                     <img
-//                       src={item.image}
-//                       alt=""
-//                       id={`img-${index}`}
-//                       // data-tip={item.tooltip}
-//                       data-tip="Welcome!"
-//                       data-for={`img${index}`}
-//                     />
-//                     {/* <ReactTooltip id={`img-${index}`} effect="solid" /> */}
-//                   </>
-//                 }
-//               >
-//                 <div>
-//                   <span>
-//                     <p className="kelas">{item.kelas}</p>
-//                     <h3>{item.name}</h3>
-//                   </span>
-//                   <hr />
-//                   <span className="container-harga">
-//                     <p
-//                       style={{
-//                         textAlign: "right",
-//                         textDecoration: "line-through",
-//                       }}
-//                     >
-//                       {item.price}
-//                     </p>
-//                     <h3 style={{ textAlign: "right" }}>{item.harga}</h3>
-//                   </span>
-//                 </div>
-//               </Card>
-//               <ReactTooltip id={`img${index}`} place="top" effect="solid" />
-//             </Col>
-//           );
-//         })}
-//       </Row>
-
-//       <button type="button" class="btn-primary" value="LOADMORE">
-//         LOAD MORE
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default RecordedLearning;
