@@ -57,8 +57,8 @@ export default function FooterComponent() {
             </Typography.Text>
 
             <Row align="middle" style={{ paddingTop: 20, gap: 20 }}>
-              {icons.map((icon) => (
-                <Link className="footer_social_media">
+              {icons.map((icon, idx) => (
+                <Link className="footer_social_media" key={idx}>
                   <i
                     className={icon}
                     style={{ color: "white", fontSize: 22 }}

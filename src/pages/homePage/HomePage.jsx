@@ -6,8 +6,6 @@ import PopularCourses from "../../components/component/popular-courses/popular-c
 import Testimonies from "../../components/component/testimonies/testimonies";
 import Steps from "../../components/component/steps/steps";
 
-import "./HomePage.css";
-
 const HomePage = () => {
   return (
     <>
