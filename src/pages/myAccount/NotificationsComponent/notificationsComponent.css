@@ -1,3 +1,14 @@
+/* Tabs Style */
+section#notifications .ant-tabs-nav {
+  margin-bottom: 50px;
+}
+
+section#notifications .ant-tabs-nav-list {
+  background-color: transparent !important;
+  color: #000 !important;
+  width: max-content;
+}
+
 section#notifications .ant-tabs-tab {
   padding: 8px 18px;
 }
@@ -20,10 +31,23 @@ section#notifications .ant-tabs-tab-btn {
   color: #2a3065;
 }
 
-/* Dropdown Filter */
+/* Dropdown Filter Style */
 section#notifications .selection-filter {
+  margin-top: 40px;
   padding: 8px;
   border: 1px solid rgba(3, 3, 3, 0.3);
   border-radius: 5px;
   color: #333;
+}
+
+/* Feedback Massage Style */
+section#notifications .feedback-msg {
+  margin-top: 64px;
+  line-height: 20px;
+}
+
+section#notifications .feedback-msg .exclamation-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #0b80a5;
 }
