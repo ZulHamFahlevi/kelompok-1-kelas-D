@@ -1,0 +1,29 @@
+section#notifications .ant-tabs-tab {
+  padding: 8px 18px;
+}
+
+section#notifications .ant-tabs-tab::before {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+}
+
+section#notifications .ant-tabs-tab-btn {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a3065;
+}
+
+/* Dropdown Filter */
+section#notifications .selection-filter {
+  padding: 8px;
+  border: 1px solid rgba(3, 3, 3, 0.3);
+  border-radius: 5px;
+  color: #333;
+}

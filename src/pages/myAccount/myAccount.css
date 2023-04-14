@@ -142,12 +142,3 @@ section#myAccount #tabs-one-panel-notifications .ant-tabs-nav-list {
 section#myAccount #tabs-one-panel-notifications .ant-tabs-tab-btn {
   width: 100%;
 }
-
-section#myAccount #tabs-one-panel-notifications .ant-tabs-tab-btn::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 10%;
-  height: 2px;
-  background-color: #000;
-}
