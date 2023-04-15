@@ -6,6 +6,7 @@ import RecordedLearning from "./../pages/recordedLearning/RecordedLearning";
 import KampusMerdeka from "./../pages/kampusMerdeka/KampusMerdeka";
 import MyAccount from "./../pages/myAccount/MyAccount";
 import LayoutComponent from "./../components/layouts/LayoutComponent";
+import PreviewPage from "../pages/recordedLearning/previewPage/PreviewPage";
 // import PreviewPage from "../pages/recordedLearning/previewPage/previewPage";
 
 
@@ -22,6 +23,7 @@ const RouteManagement = () => {
           <Route path="/my-account" element={<MyAccount />} />
           {/* <Route path="/preview-page" element= {<PreviewPage />}/> */}
           {/* <Route path="/preview-page" element={<PreviewPage />} /> */}
+          <Route path="/PreviewPage" element={<PreviewPage/>} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
       </LayoutComponent>

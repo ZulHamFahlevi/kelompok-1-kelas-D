@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { DATA_PREVIEW } from "./constants";
+import { DATA_PREVIEW } from "../constants";
 
 const PreviewPage = () => {
   return (

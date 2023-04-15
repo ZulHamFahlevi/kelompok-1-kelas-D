@@ -18,6 +18,10 @@ const RecordedLearning = () => {
     setSelectedClass(item);
     history.push("/PreviewPage");
   }, [history]);
+  
+  // const handleClick = useCallback(() => {
+  //   window.location.href = '/PreviewPage';
+  // }, []);
 
   const handleLoadMore = () => {
     setLoadMore(!loadMore);
@@ -47,7 +51,7 @@ const RecordedLearning = () => {
                 >
                   <div>
                     <p>{item.kelas}</p>
-                    <Link to="/PreviewPage" onClick={() => handleClick(item)}>
+                    <Link to="/PreviewPage">
                       <h3 style={{color:"black"}}>{item.name}</h3>
                     </Link>
                     <hr />
