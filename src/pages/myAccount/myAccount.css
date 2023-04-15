@@ -133,12 +133,6 @@ section#myAccount .ant-tabs-tab-active {
   color: #000 !important;
 }
 
-section#myAccount #tabs-one-panel-notifications .ant-tabs-nav-list {
-  background-color: transparent !important;
-  color: #000 !important;
-  width: max-content;
-}
-
-section#myAccount #tabs-one-panel-notifications .ant-tabs-tab-btn {
-  width: 100%;
+section#myAccount .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #000;
 }

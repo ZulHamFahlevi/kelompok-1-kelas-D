@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./myAccount.css";
 import { DownOutlined } from "@ant-design/icons";
 import {
   Typography,
   Row,
-  Col,
   Space,
   Dropdown,
   Card,
   Progress,
   Button,
-  Menu,
   Tabs,
 } from "antd";
 import { CARD_DATA, DROPDOWN_ITEMS, TAB_ITEMS } from "./constants";
