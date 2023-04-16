@@ -1,5 +1,5 @@
+import { Card, Col, Image, Row } from "antd";
 import React from "react";
-import { Card, Col, Row, Image } from "antd";
 import { DATA_FUNDAMENTAL, DATA_MASTERING, DATA_PRAKERJA } from "../constants";
 import "./MenuComponent.css";
 

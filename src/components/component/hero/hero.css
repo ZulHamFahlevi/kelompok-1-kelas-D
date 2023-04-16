@@ -1,0 +1,62 @@
+.hero {
+  background-image: url("https://alta.id/wp-content/uploads/2022/09/back1-e1664447544475.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  max-width: 580px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.hero__container h1 {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.hero__container .desc {
+  font-size: 21px;
+  line-height: 1.5em;
+  margin: 30px auto 46px;
+}
+
+.round_button {
+  background-color: #f37524;
+  max-width: 182px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: auto;
+}
+
+.round_button:hover {
+  background-color: #b74800;
+}
+
+@media (min-width: 992px) {
+  .hero__container {
+    margin-left: 70px;
+    text-align: left;
+  }
+
+  .hero__container h1 {
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .hero__container p {
+    text-align: left;
+  }
+
+  .round_button {
+    margin: initial;
+  }
+}

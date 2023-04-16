@@ -1,17 +1,12 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 84px;
-  padding: 0px 0.5em;
-  max-width: 1200px;
   width: 100%;
-  margin: auto;
+  padding: 12px;
 }
 
 .logo {
   width: 60px;
   height: 60px;
+  vertical-align: middle;
 }
 
 .searchCircle {
@@ -19,7 +14,7 @@
   height: 36px;
   background-color: #19345f;
   border-radius: 50%;
-  margin-left: 40px;
+  margin-left: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,4 +28,33 @@
 .searchLogo {
   color: #fff;
   font-size: 14px;
+}
+
+.btn__login {
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #f37524;
+  padding: 15px 30px;
+  width: -webkit-fill-available;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px auto;
+}
+
+.btn__login:hover {
+  background-color: #f3752494;
+}
+
+@media (min-width: 992px) {
+  .searchCircle {
+    margin-left: 40px;
+  }
+
+  .btn__login {
+    margin: 0 auto 0 32px;
+  }
 }
