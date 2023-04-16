@@ -1,0 +1,45 @@
+.langkah_section {
+  background-color: #f0f4fa;
+  margin-top: 100px;
+  padding: 4em 0;
+}
+
+.langkah_section--container {
+  padding: 0 12px;
+}
+
+.langkah_section .title {
+  font-size: 36px;
+  color: #19345f;
+  text-align: center;
+}
+
+.langkah_button {
+  background-color: #19345f;
+  padding: 20px 40px;
+  border-radius: 5px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 auto;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.langkah_button:hover {
+  background-color: #f37524;
+  transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  .langkah_section--container {
+    padding: 0;
+  }
+
+  .langkah_section .title {
+    font-size: 42px;
+    text-align: left;
+  }
+}

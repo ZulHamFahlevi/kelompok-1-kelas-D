@@ -1,0 +1,74 @@
+/* Tabs Style */
+section#settings .ant-tabs-nav {
+  margin-bottom: 50px;
+}
+
+section#settings .ant-tabs-nav-list {
+  background-color: transparent !important;
+  color: #000 !important;
+  width: max-content;
+}
+
+section#settings .ant-tabs-tab {
+  padding: 8px 18px;
+}
+
+section#settings .ant-tabs-tab {
+  padding: 8px 18px;
+}
+
+section#settings .ant-tabs-tab::before {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+}
+
+section#settings .ant-tabs-tab-btn {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a3065;
+}
+
+/* Typography Style */
+section#settings .title {
+  margin-bottom: 10px !important;
+  font-weight: 900;
+  color: #2a3065;
+}
+
+/* Form Style */
+form#yourProfile .ant-form-item-required {
+  padding-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #aaa;
+}
+
+form#yourProfile .ant-form-item-required::before {
+  display: none;
+}
+
+form#yourProfile .ant-input-affix-wrapper {
+  height: 45px;
+  border-radius: 0;
+  border: 2px solid #f0f2f5;
+  background: #f0f2f5;
+  color: #555;
+}
+
+form#yourProfile .ant-input {
+  background: #f0f2f5;
+  color: #555;
+}
+
+form#yourProfile .ant-input-affix-wrapper :where(.ant-input:focus) {
+  background-color: #fff !important;
+  border-color: #f0f2f5;
+  outline: 0;
+}

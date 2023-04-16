@@ -1,19 +1,6 @@
-import HomePage from "./pages/homePage/HomePage";
-import HybridClasses from "./pages/hybridClasses/HybridClasses";
-import RecordedLearning from "./pages/recordedLearning/RecordedLearning";
-import KampusMerdeka from "./pages/kampusMerdeka/KampusMerdeka";
-import MyAccount from "./pages/myAccount/MyAccount";
-
+import RouteManagement from "./router/RouteManagement";
 function App() {
-  return (
-    <>
-      <HomePage />
-      <HybridClasses />
-      <RecordedLearning />
-      <KampusMerdeka />
-      <MyAccount />
-    </>
-  );
+  return <RouteManagement />;
 }
 
 export default App;

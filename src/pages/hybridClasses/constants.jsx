@@ -20,6 +20,7 @@ import ReactImg3 from "../../assets/mastering/react.png";
 import SpringImg3 from "../../assets/mastering/spring.png";
 import TsImg from "../../assets/mastering/ts.png";
 import VueImg3 from "../../assets/mastering/vue.png";
+import { currencyFormatter } from "../../helpers/currencyFormatter";
 
 const DATA_FUNDAMENTAL = [
   {
@@ -27,42 +28,42 @@ const DATA_FUNDAMENTAL = [
     kelas: "Fundamental Class",
     title: "Fundamental Java Spring Boot",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: QAImg,
     kelas: "Fundamental Class",
     title: "Fundamental Quality Engineer",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: FlutterImg,
     kelas: "Fundamental Class",
     title: "Fundamental Mobile Development",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: FigmaImg,
     kelas: "Fundamental Class",
     title: "Fundamental UI/UX",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: GolangImg,
     kelas: "Fundamental Class",
     title: "Fundamental Back-End Engineer with Golang",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
   {
     image: ReactImg,
     kelas: "Fundamental Class",
     title: "Fundamental Front-End Engineer with React",
     member: "",
-    price: "Rp.199.000",
+    price: currencyFormatter("Rp", "199000"),
   },
 ];
 
@@ -137,57 +138,57 @@ const DATA_MASTERING = [
     image: GolangImg3,
     kelas: "Mastering Class",
     title: "Mastering Back-End Engineering with Golang",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: ReactImg3,
     kelas: "Mastering Class",
     title: "Mastering Front-End Development with React JS",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: SpringImg3,
     kelas: "Mastering Class",
     title: "Mastering Back-End Development with Java Spring Boot",
-    member: "Rp.1.200.000",
-    price: "Rp.599.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: FigmaImg3,
     kelas: "Mastering Class",
     title: "Mastering UI/UX Designer",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: QAImg3,
     kelas: "Mastering Class",
     title: "Mastering Quality Engineer",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: FlutterImg3,
     kelas: "Mastering Class",
     title: "Mastering Mobile Development with Flutter",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: TsImg,
     kelas: "Mastering Class",
     title: "Typescript with React JS",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
   {
     image: VueImg3,
     kelas: "Mastering Class",
     title: "Mastering Front-End Development with Vue JS",
-    member: "Rp.800.000",
-    price: "Rp.399.000",
+    member: currencyFormatter("Rp", "800000"),
+    price: currencyFormatter("Rp", "399000"),
   },
 ];
 

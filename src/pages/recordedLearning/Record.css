@@ -1,0 +1,20 @@
+.container-record {
+  margin: 50px;
+  max-width: 1200px;
+  /* preview */
+}
+
+.btn-primary {
+  background-color: rgb(28, 28, 92);
+  color: white;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  width: 11%;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 30px;
+}
